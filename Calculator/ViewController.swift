@@ -36,10 +36,12 @@ class ViewController: UIViewController {
 
     @IBAction func enter() {
         userIsInTheMiddleOfTyping = false
-        if let result = brain.pushOperand(displayValue) {
-            displayValue = result
-        } else {
-            displayValue = 0
+        if let value = displayValue {
+            if let result = brain.pushOperand(value) {
+                displayValue = result
+            } else {
+                displayValue = 0
+            }
         }
     }
 
@@ -54,12 +56,16 @@ class ViewController: UIViewController {
         }
     }
 
-    var displayValue: Double {
+    var displayValue: Double? {
         get {
-            return Double(display.text!)!
+            return NSNumberFormatter().numberFromString(display.text!)?.doubleValue
         }
         set {
-            display.text = "\(newValue)"
+            if newValue != nil {
+                display.text = "\(newValue!)"
+            } else {
+                display.text = "0"
+            }
             userIsInTheMiddleOfTyping = false
         }
     }

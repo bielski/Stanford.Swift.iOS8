@@ -104,6 +104,14 @@
                                     <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ye0-Ym-yTO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK4-1m-g6D">
+                                <rect key="frame" x="28" y="208" width="102.5" height="122.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFd-Z3-245"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzx-48-dfa">
                                 <rect key="frame" x="138.5" y="208.5" width="102.5" height="122.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -192,21 +200,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-5D-Uws">
-                                <rect key="frame" x="138.5" y="8" width="102.5" height="122.5"/>
+                                <rect key="frame" x="138" y="8" width="102.5" height="122.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="🔙">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="backspace" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAE-O5-xRX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK4-1m-g6D">
-                                <rect key="frame" x="28" y="208" width="102.5" height="122.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="4"/>
-                                <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFd-Z3-245"/>
                                 </connections>
                             </button>
                         </subviews>
