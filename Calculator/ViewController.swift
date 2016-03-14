@@ -48,6 +48,12 @@ class ViewController: UIViewController {
         displayValue = 0
     }
 
+    @IBAction func backspace() {
+        if userIsInTheMiddleOfTyping {
+            display.text = String(display.text!.characters.dropLast())
+        }
+    }
+
     var displayValue: Double {
         get {
             return Double(display.text!)!
